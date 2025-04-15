@@ -1,77 +1,167 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Kalengkongan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin Kalengkongan</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Kevin Kalengkongan</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- Home Section -->
+
+<!-- Sidebar -->
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <img src="logo.png" alt="Logo Kevin" class="sidebar-logo" />
+  <div class="sidebar-content" id="sidebar-content">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#tools" class="highlight-link">Tools 🔧</a></li>
+    </ul>
+    <!-- Bagian Contact di sidebar -->
+    <div class="sidebar-contact">
+      <h3>Contact Me</h3>
+      <ul class="sidebar-contact-list">
+        <li>
+          <a href="/cdn-cgi/l/email-protection#eab0beadb2b5abea9c8a9c8e9c" title="Email">
+            <span class="contact-icon">✉️</span>Email
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kevin-kalengkongan" target="_blank" title="LinkedIn">
+            <span class="contact-icon">💼</span>LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://tryhackme.com/p/kvnbryank" target="_blank" title="TryHackMe">
+            <span class="contact-icon">🔒</span>TryHackMe
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Terminal Popup Trigger sudah dihapus dari kode, hapus juga button toggle-theme dari sini -->
+  <button id="toggle-theme">🌙</button>
+</aside>
+      
+  <main class="content">
+    <!-- Home -->
+    <!-- Home -->
     <section id="home">
-        <h2>Selamat Datang</h2>
-        <p>Selamat datang di website saya. Ini adalah tempat di mana saya berbagi berbagai informasi menarik seputar teknologi, seni, dan olahraga.</p>
-    </section>
-    
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="rce.png">
-            <img src="rce.png">
-            <img src="rce.png">
+      <div class="home-wrapper">
+        <div class="home-container">
+          <!-- Kolom Kiri: Perkenalan -->
+          <div class="intro-section">
+            <h3>Kevin Bryan</h3>
+            <h1>Student <span class="plus">+</span> <span id="typing-text">Cyber Security</span></h1>
+          </div>
+          <!-- Kolom Kanan: Window Info -->
+          <div class="info-window">
+            <div class="terminal-bar">
+              <span class="circle red"></span>
+              <span class="circle yellow"></span>
+              <span class="circle green"></span>
+              <span class="terminal-title">info@localhost:~</span>
+            </div>
+            <div class="info-content">
+              <p>✨ This website is built with:</p>
+              <p>✔ 100% Vanilla HTML, CSS, and JavaScript</p>
+              <p>✔ No external libraries or frameworks</p>
+              <p>✔ Created with 💻 & passion by Kevin</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     
-    <!-- Blog Section -->
+
+    <!-- Gallery -->
+
+    <section id="gallery">
+      <h2>Gallery - Certificate</h2>
+      <div class="gallery-container">
+        <img src="https://raw.githubusercontent.com/kvnbryn/assetsPortfolio/refs/heads/main/cert/cert1.jpg" alt="Gallery Image" />
+        <img src="https://raw.githubusercontent.com/kvnbryn/assetsPortfolio/refs/heads/main/cert/aa.jpg" alt="Gallery Image" />
+        <img src="https://raw.githubusercontent.com/kvnbryn/assetsPortfolio/refs/heads/main/cert/eCertficate28Nov_Kevin%20Bryan%20Kalengkongan_page-0001.jpg" alt="Gallery Image" />
+      </div>
+      <div>
+
+      </div>
+    </section>
+
+
+    <!-- Blog -->
     <section id="blog">
-        <h2>Blog</h2>
-        <article>
-            <h3>Perkembangan AI dalam Teknologi Modern</h3>
-            <p>Artificial Intelligence (AI) semakin berkembang pesat, mulai dari chatbot hingga sistem otomatisasi industri. AI kini memainkan peran penting dalam kehidupan manusia, membantu meningkatkan efisiensi kerja serta memberikan solusi inovatif di berbagai bidang.</p>
-        </article>
-        <article>
-            <h3>Makna Seni dalam Kehidupan Sehari-hari</h3>
-            <p>Seni bukan hanya tentang lukisan atau musik, tetapi juga cara kita mengekspresikan diri. Dari desain grafis hingga arsitektur, seni hadir di sekitar kita dan menjadi bagian dari identitas budaya serta kreativitas individu.</p>
-        </article>
-        <article>
-            <h3>Manfaat Olahraga untuk Kesehatan Fisik dan Mental</h3>
-            <p>Olahraga tidak hanya bermanfaat bagi kesehatan fisik tetapi juga mental. Aktivitas fisik seperti lari, berenang, atau bersepeda dapat mengurangi stres, meningkatkan kebugaran, dan memperbaiki suasana hati secara keseluruhan.</p>
-        </article>
+      <h2>Blog</h2>
+      <article>
+        <h3>Perkembangan AI dalam Teknologi Modern</h3>
+        <p>
+          Artificial Intelligence (AI) semakin berkembang pesat, mulai dari chatbot hingga sistem otomatisasi industri. AI kini memainkan peran penting dalam kehidupan manusia, membantu meningkatkan efisiensi kerja serta memberikan solusi inovatif di berbagai bidang.
+        </p>
+      </article>
+      <article>
+        <h3>Makna Seni dalam Kehidupan Sehari-hari</h3>
+        <p>
+          Seni bukan hanya tentang lukisan atau musik, tetapi juga cara kita mengekspresikan diri. Dari desain grafis hingga arsitektur, seni hadir di sekitar kita dan menjadi bagian dari identitas budaya serta kreativitas individu.
+        </p>
+      </article>
+      <article>
+        <h3>Manfaat Olahraga untuk Kesehatan Fisik dan Mental</h3>
+        <p>
+          Olahraga tidak hanya bermanfaat bagi kesehatan fisik tetapi juga mental. Aktivitas fisik seperti lari, berenang, atau bersepeda dapat mengurangi stres, meningkatkan kebugaran, dan memperbaiki suasana hati secara keseluruhan.
+        </p>
+      </article>
     </section>
+
+    <!-- Contact -->
     
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
-    
+    <!-- Tools Section -->
+<section id="tools">
+  <h2>Base64 Tools</h2>
+  <div class="tools-container">
+    <div class="tools-interaction">
+      <label for="base64-input">Teks Awal</label>
+      <textarea id="base64-input" placeholder="Tulis teks atau kode di sini..."></textarea>
+
+      <div class="button-group">
+        <button onclick="encodeBase64()">Encode</button>
+        <button onclick="decodeBase64()">Decode</button>
+      </div>
+
+      <label for="base64-output">Hasil</label>
+      <textarea id="base64-output" placeholder="Hasil akan muncul di sini..." readonly></textarea>
+    </div>
+
+    <div class="tools-guide">
+      <h3>Cara Penggunaan</h3>
+      <p>
+        🧠 Masukkan teks biasa ke kolom "Teks Awal", lalu klik <b>Encode</b> untuk mengubahnya menjadi format Base64.<br><br>
+        🔓 Untuk mendekripsi, masukkan teks yang sudah ter-encode ke kolom yang sama dan klik <b>Decode</b>.<br><br>
+        ⚠️ Base64 bukan enkripsi, hanya encoding. Cocok digunakan untuk mengubah teks ke format aman untuk URL, transfer data, dll.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li>Email: <a href="mailto:kevin@example.com">kvnbryank@gmail.com</a></li>
+    <li>LinkedIn: <a href="www.linkedin.com/in/kevin-kalengkongan" target="_blank">linkedin.com/in/kevin</a></li>
+    <li>TryHackMe: <a href="https://tryhackme.com/p/kvnbryank" target="_blank">tryhackme.com/p/kevin</a></li>
+  </ul>
+</section>
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Kevin Kalengkongan</p>
+      <p>&copy; 2025 Kevin Kalengkongan</p>
     </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
